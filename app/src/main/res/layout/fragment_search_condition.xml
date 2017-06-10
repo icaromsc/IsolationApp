@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.edu.ufcspa.isolationapp.control.SearchConditionFragment"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:hint="digite a a condição"
+        android:ems="10"
+        android:id="@+id/edTxCondition" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btSearch"
+        android:text="BUSCAR"
+
+
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="NOME INFECÇÃO/CONDICÃO"
+            android:ems="10"
+             />
+
+        <TextView
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:text="TIPO"
+            android:ems="10"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lviewConditions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

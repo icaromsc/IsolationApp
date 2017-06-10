@@ -12,9 +12,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="br.edu.ufcspa.isolationapp.control.MainActivity"
     tools:showIn="@layout/app_bar_main">
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+    </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 </RelativeLayout>

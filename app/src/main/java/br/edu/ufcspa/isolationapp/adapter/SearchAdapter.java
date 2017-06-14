@@ -32,8 +32,9 @@ public class SearchAdapter extends BaseExpandableListAdapter{
 
         @Override
         public Object getChild(int groupPosition, int childPosititon) {
-            return this._listDataChild.get(this._listDataHeader.get(groupPosition))
-                    .get(childPosititon);
+            /*return this._listDataChild.get(this._listDataHeader.get(groupPosition))
+                    .get(childPosititon);*/
+            return null;
         }
 
         @Override
@@ -45,7 +46,25 @@ public class SearchAdapter extends BaseExpandableListAdapter{
         public View getChildView(int groupPosition, final int childPosition,
                                  boolean isLastChild, View convertView, ViewGroup parent) {
 
-            final String childText = (String) getChild(groupPosition, childPosition);
+
+            if (convertView == null) {
+                LayoutInflater infalInflater = (LayoutInflater) this._context
+                        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = infalInflater.inflate(R.layout.expandable_condition_item, null);
+            }
+
+            Condicao condicao = conds.get(groupPosition);
+
+            TextView txNomeCondition= (TextView) convertView.findViewById(R.id.txNameCondition);
+            TextView txTipoCondition= (TextView) convertView.findViewById(R.id.txTipoCondition);
+            TextView txDuracao= (TextView) convertView.findViewById(R.id.txDuracao);
+            TextView txInfo= (TextView) convertView.findViewById(R.id.txInfo);
+
+
+            txNomeCondition.setText(condicao.getNomeCondicao());
+            txDuracao.setText(condicao.getDuracao());
+            txTipoCondition.setText(condicao.getTipo());
+            txInfo.setText(condicao.getInfo());
 
 
 
@@ -75,7 +94,7 @@ public class SearchAdapter extends BaseExpandableListAdapter{
         @Override
         public View getGroupView(int groupPosition, boolean isExpanded,
                                  View convertView, ViewGroup parent) {
-            String headerTitle = (String) getGroup(groupPosition);
+            //String headerTitle = (String) getGroup(groupPosition);
             if (convertView == null) {
                 LayoutInflater infalInflater = (LayoutInflater) this._context
                         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);

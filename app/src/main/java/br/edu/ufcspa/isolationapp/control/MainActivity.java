@@ -116,18 +116,15 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_search_condition) {
             // Handle the camera action
             fragmentManager.beginTransaction().replace(R.id.frame_content, new SearchConditionFragment()).commit();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_precation) {
 
-        } else if (id == R.id.nav_slideshow) {
+            fragmentManager.beginTransaction().replace(R.id.frame_content, new EpiFragment()).commit();
+        } else if (id == R.id.nav_higienizacao) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_sobre) {
 
         }
 

@@ -61,6 +61,8 @@ public class SearchConditionFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 List<Condicao> lista = data.buscarCondicaoPorNome(edtCondition.getText().toString());
+                if(layoutLegend.getVisibility()==View.GONE)
+                    layoutLegend.setVisibility(View.VISIBLE);
 
                 if(lista.size()>0){
                     //SearchConditionAdapter adapter = new SearchConditionAdapter(lista,myView.getContext());

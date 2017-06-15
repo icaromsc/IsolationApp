@@ -18,6 +18,12 @@
             android:id="@+id/nav_sobre"
             android:icon="@android:drawable/ic_dialog_info"
             android:title="Sobre o app" />
+
+
+        <item
+            android:id="@+id/nav_referencias"
+            android:icon="@android:drawable/ic_menu_zoom"
+            android:title="Referências Bibliográficas" />
     </group>
 
 

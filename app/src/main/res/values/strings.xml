@@ -8,4 +8,18 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+    <string name="link_1">https://www.cdc.gov/infectioncontrol/guidelines/index.html</string>
+    <string name="link_2">http://apps.who.int/iris/bitstream/10665/112647/1/WHO_HSE_PED_AIP_2014.2_eng.pdf</string>
+    <string name="link_3">http://www.who.int/gpsc/5may/tools/9789241597906/en/</string>
+    <string name="link_4">http://www.paho.org/bra/index.php?option=com_joomlabook&amp;task=display&amp;id=186&amp;Itemid=232</string>
+    <string name="sobre">Este App tem caráter informativo e foi criado para que profissionais e estudantes da área da saúde possam realizar consultas sobre precauções padrão e baseadas em rotas de transmissão. \n \n Boa pesquisa! </string>
+
+
+
+
+
 </resources>

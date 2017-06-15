@@ -67,6 +67,17 @@ public class SearchAdapter extends BaseExpandableListAdapter{
             txInfo.setText(condicao.getInfo());
 
 
+            txTipoCondition.setText("");
+            if(condicao.getTipo().contains("C"))
+                txTipoCondition.setText(" Contato(C) ");
+            if(condicao.getTipo().contains("P"))
+                txTipoCondition.setText(txTipoCondition.getText()+" Padrão(P) ");
+            if(condicao.getTipo().contains("G"))
+                txTipoCondition.setText(txTipoCondition.getText()+" Gotículas(G) ");
+            if(condicao.getTipo().contains("A"))
+                txTipoCondition.setText(txTipoCondition.getText()+" Aerossóis(A) ");
+
+
 
             return convertView;
         }
@@ -108,7 +119,9 @@ public class SearchAdapter extends BaseExpandableListAdapter{
                     convertView.findViewById(R.id.txType);
 
             nomeCondicao.setText(condicao.getNomeCondicao());
+
             tipo.setText(condicao.getTipo());
+
 
             return convertView;
         }

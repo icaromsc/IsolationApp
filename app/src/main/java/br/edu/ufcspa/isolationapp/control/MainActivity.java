@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
 
         content = (FrameLayout) findViewById(R.id.frame_content);
         FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.frame_content, new AboutFragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.frame_content, new InitialFragment()).commit();
 
 
 
@@ -121,16 +121,24 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_search_condition) {
             // Handle the camera action
             fragmentManager.beginTransaction().replace(R.id.frame_content, new SearchConditionFragment()).commit();
+
         } else if (id == R.id.nav_precation) {
 
             fragmentManager.beginTransaction().replace(R.id.frame_content, new EpiFragment()).commit();
+
         } else if (id == R.id.nav_higienizacao) {
 
+            fragmentManager.beginTransaction().replace(R.id.frame_content, new HigienizacaoFragment()).commit();
+
         } else if (id == R.id.nav_sobre) {
+
             fragmentManager.beginTransaction().replace(R.id.frame_content, new AboutFragment()).commit();
+
         }
         else if (id == R.id.nav_referencias) {
+
             fragmentManager.beginTransaction().replace(R.id.frame_content, new LinksFragment()).commit();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

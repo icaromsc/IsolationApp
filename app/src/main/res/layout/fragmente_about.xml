@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_margin="20dp"
-        android:textSize="10pt"
+        android:textSize="8pt"
         android:textAlignment="center"
         android:text="@string/sobre"
 
